@@ -5,6 +5,7 @@ import { Reception } from './pages/Reception';
 import { Nurse } from './pages/Nurse';
 import { TVDisplay } from './pages/TVDisplay';
 import { Admin } from './pages/Admin';
+import { Kiosk } from './pages/Kiosk';
 
 export function App() {
   return (
@@ -15,6 +16,7 @@ export function App() {
         <Route path="/nurse" element={<Nurse />} />
         <Route path="/tv" element={<TVDisplay />} />
         <Route path="/admin" element={<Admin />} />
+        <Route path="/kiosk" element={<Kiosk />} />
         <Route path="*" element={<Navigate to="/login" replace />} />
       </Routes>
     </BrowserRouter>
